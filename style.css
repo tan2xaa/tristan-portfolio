@@ -367,14 +367,14 @@ main {
 }
 
 /* education */
+/* education */
 .edu-grid {
-  max-width: 1000px;
+  max-width: 700px;
   margin: 0 auto;
   display: grid;
   gap: 1.2rem;
 }
 
-/* WINDOW CARD (same vibe as projects) */
 .window-card {
   background: var(--bg-panel);
   border: 1px solid var(--border);
@@ -383,12 +383,24 @@ main {
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-
 .window-body {
   padding: 1.2rem;
   display: flex;
   flex-direction: column;
+  gap: 1rem;
+}
+
+/* single entry inside the merged window */
+.edu-entry {
+  display: flex;
+  flex-direction: column;
   gap: 0.6rem;
+}
+
+.edu-divider {
+  height: 1px;
+  background: var(--border);
+  margin: 0.2rem 0;
 }
 
 /* TEXT */
@@ -463,6 +475,13 @@ main {
   object-fit: cover;
   display: block;
 }
+
+.project-date {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.2rem;
+} rw
 
 .image-overlay {
   position: absolute;
